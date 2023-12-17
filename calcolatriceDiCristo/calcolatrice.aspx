@@ -12,7 +12,8 @@
 <body>
     <form id="form1" runat="server">
 
-        <div>
+        
+        <%--<div id="contenitore">--%>
             <table>
 
                 <tr>
@@ -82,7 +83,7 @@
 
             </table>
 
-        </div>
+        <%--</div>--%>
     </form>
 </body>
 </html>

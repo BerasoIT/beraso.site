@@ -2,35 +2,37 @@
     font-family: Helvetica;
 }
 
-div {
-    /*text-align:center;*/
-}
 
 table {
     border: 1px solid;
     text-align: center;
-    width: 178px;
+    width: 375px;
     background-color: #000000;
+    margin: 0 auto;
+    border-radius: 10px;
 }
 
 #txtDisplay {
     text-align: right;
-    width: 170px;
-    font-size: 2.2em;
+    width: 330px;
+    font-size: 4em;
+    margin-right: 5px;
 }
 
 td, tr {
     border: none;
-    height: 35px;
+    height: 85px;
+    width: 85px;
 }
 
 .bottoneNumeri {
     border-radius: 100%;
-    width: 40px;
-    height: 40px;
+    width: 80px;
+    height: 80px;
     border: none;
     background-color: #333333;
     color: #ffffff;
+    font-size: 2.2em;
 }
 
     .bottoneNumeri:active {
@@ -39,11 +41,12 @@ td, tr {
 
 .bottoneOperatori {
     border-radius: 100%;
-    width: 40px;
-    height: 40px;
+    width: 80px;
+    height: 80px;
     border: none;
     background-color: #FF9F0A;
     color: #ffffff;
+    font-size: 2.2em;
 }
 
     .bottoneOperatori:active {
@@ -52,11 +55,12 @@ td, tr {
 
 .bottoneFunzione {
     border-radius: 100%;
-    width: 40px;
-    height: 40px;
+    width: 80px;
+    height: 80px;
     border: none;
     background-color: #A5A5A5;
     color: #000000;
+    font-size: 2.2em;
 }
 
     .bottoneFunzione:active {
@@ -70,13 +74,13 @@ td, tr {
 }
 
 #btnDivisione {
-    font-size: 1em;
+    font-size: 2.5em;
 }
 
 
 #btn0 {
     border-radius: 55px;
-    width: 86px;
-    height: 40px;
+    width: 170px;
+    height: 80px;
     border: none;
 }

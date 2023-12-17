@@ -45,7 +45,8 @@ public partial class calcolatrice : System.Web.UI.Page
     protected void btn0_Click(object sender, EventArgs e)
     {
 
-        if (flag == 1) { //controllo se è in corso un operazione o se è nesessario ricominciare a seguito di un uguale
+        if (flag == 1)
+        { //controllo se è in corso un operazione o se è nesessario ricominciare a seguito di un uguale
 
             num1 = "";
             num2 = "";
@@ -330,6 +331,17 @@ public partial class calcolatrice : System.Web.UI.Page
 
     protected void btnAddizione_Click(object sender, EventArgs e)
     {
+
+        if (flag == 1)
+        { //controllo se è in corso un operazione o se è nesessario ricominciare a seguito di un uguale
+
+            num1 = txtDisplay.Text;
+            num2 = "";
+            op = "+";
+            flag = 0;
+        }
+
+
         if (num1 != "")
         {
             if (num2 == "")
@@ -371,6 +383,15 @@ public partial class calcolatrice : System.Web.UI.Page
 
     protected void btnSottrazione_Click(object sender, EventArgs e)
     {
+
+        if (flag == 1)
+        { //controllo se è in corso un operazione o se è nesessario ricominciare a seguito di un uguale
+
+            num1 = txtDisplay.Text;
+            num2 = "";
+            op = "-";
+            flag = 0;
+        }
 
         if (num1 != "")
         {
@@ -414,6 +435,15 @@ public partial class calcolatrice : System.Web.UI.Page
     protected void btnMoltiplicazione_Click(object sender, EventArgs e)
     {
 
+        if (flag == 1)
+        { //controllo se è in corso un operazione o se è nesessario ricominciare a seguito di un uguale
+
+            num1 = txtDisplay.Text;
+            num2 = "";
+            op = "*";
+            flag = 0;
+        }
+
         if (num1 != "")
         {
             if (num2 == "")
@@ -454,6 +484,17 @@ public partial class calcolatrice : System.Web.UI.Page
 
     protected void btnDivisione_Click(object sender, EventArgs e)
     {
+
+        if (flag == 1)
+        { //controllo se è in corso un operazione o se è nesessario ricominciare a seguito di un uguale
+
+            num1 = txtDisplay.Text;
+            num2 = "";
+            op = "/";
+            flag = 0;
+        }
+
+
         if (num1 != "")
         {
             if (num2 == "")
@@ -544,7 +585,7 @@ public partial class calcolatrice : System.Web.UI.Page
                         op = "";
                     }
 
-                    flag = 1;
+                    flag = 1; //per segnarmi che ho appena concluso un operazione
                 }
             }
         }
