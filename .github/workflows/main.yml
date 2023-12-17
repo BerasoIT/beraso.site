@@ -23,7 +23,7 @@ jobs:
           dotnet-version: '6.0.x'
           
       - name: Restore
-        run: dotnet restore ./calcolatriceDiCristo.sln
+        run: dotnet restore ./calcolatriceDiCristo.sln -p:RestoreUseSkipNonexistentTargets=false -nowarn:msb3202,nu1503
         
       - name: Build
         run: dotnet build ./calcolatriceDiCristo.sln --configuration Release --no-restore
